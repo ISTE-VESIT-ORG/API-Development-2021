@@ -2,11 +2,9 @@ from flask import Flask, render_template, request
 from flask.json import jsonify
 from flask.wrappers import Request
 
-# * Flask constructor takes the name of current module (__name__) as argument.
 app = Flask(__name__)
 
-# ! -------------------- GLOBAL VARIABLES START --------------------
-# demo for JSON
+# ! demo for JSON
 agents = {
     "sova": {
         "real name": "Hunter",
@@ -25,14 +23,10 @@ agents = {
     }
 }
 
-# demo list
+# ! demo list
 weapons = ['Operator', 'Vandal']
 
-# ! -------------------- GLOBAL VARIABLES END --------------------
-
 # ? *** Base route ***
-# * The route() function of the Flask class is a decorator 
-# * it tells the application which URL should call the associated function.
 @app.route('/')
 def home():
     name = "Aamir"
