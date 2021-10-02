@@ -5,6 +5,7 @@ app = Flask(__name__)
 
 nameList = []
 lordOfTheList = []
+colors = []
 
 # ? *** Home ***
 @app.route('/')
@@ -33,6 +34,7 @@ def insertName(someString):
 
         # Insert the new item in list
         lordOfTheList.insert(0, someString)
+        colors.insert(0,random.randint(0,6))
         
         return redirect(url_for("showRequests"))
 
@@ -49,7 +51,7 @@ def showRequests():
 @app.route('/background_process', methods=['GET'])
 def background_process():
     if request.method == 'GET':
-        return jsonify(lordOfTheList)
+        return jsonify(lordOfTheList, colors)
 
 # ? *** Driver ***
 if __name__ == "__main__":

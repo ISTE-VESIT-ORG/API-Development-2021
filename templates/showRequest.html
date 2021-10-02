@@ -23,18 +23,27 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"> </script>  
   <script type="text/javascript">
     let oldList = []
+    const bg_color = ['primary','danger','warning','secondary','dark','success','info']
+
+ 
     setInterval(function() { 
       $.ajax({
         url: "/background_process",
         type: 'GET',
-        success: (list) => {
+        success: (list, colors) => {
           let myOldList = oldList.join("|");
           let myList = list.join("|");
-
+          console.log(list)
           if (myOldList != myList) {
             $("#result").empty();
-            list.forEach(result => {
-              $("#result").append(`<div id="innerContainer" class="col-md-6 col-lg-4 col-sm-12 p-2 my-2">${result}</div>`);
+            let i=0
+            list[0].forEach(result => {
+              $("#result").append(`
+                <span class="col badge m-1 px-4 rounded-pill bg-${bg_color[list[1][i]]}">
+                  <h4>${result}</h4>
+                </span>
+              `);
+              i++;
             });
             oldList = list
           } else {
@@ -48,8 +57,8 @@
 
 </head>
 <body>
-  <div class="container">
-    <div class="row mt-3" id="result">
+  <div class="container-fluid" id="result">
+    <div class="row">
   
     </div>
   </div>
