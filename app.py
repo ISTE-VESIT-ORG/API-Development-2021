@@ -27,7 +27,7 @@ def insertName(someString):
         nameList.insert(0, someString)
 
         # Append funny titles
-        funnyTitles = ["Great", "Conquerer", "Magician", "Evolver","Depressed","Racist","Connoisseur"]
+        funnyTitles = ["Great", "Conquerer", "Magician", "Evolver","Depressed","Racist","Connoisseur","Adaptable","Adventurous","Amarous","diligent","Humble","Courageous","Efficient","Enchanting","Generous","Magnetic","Likeable","Sincere","Non","Trustworthy","Resourceful","Wellread","Wise","Zealous","Resilient","Reliable","Determined","Strong","Stupendous","Exceptional","Generous","Kind","Persuasive","Vivacious","Witty","Extraordinary","Divine","Breathtaking","Flawless","Magnificent","Lively","Versatile","Amazing","Funloving","Welltravelled","Outgoing","amicable","Friendly","Perseverant","Enthusiastic","Affectionate","Thoughtful","Modest","Hygienic","Considerate","Courteous"]
         title = funnyTitles[random.randint(0, len(funnyTitles)-1)]
         someString += " The "+title
 
