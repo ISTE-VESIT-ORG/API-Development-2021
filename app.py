@@ -34,7 +34,7 @@ def insertName(someString):
 
         # Insert the new item in list
         lordOfTheList.insert(0, someString)
-        colors.insert(0,random.randint(0,6))
+        colors.insert(0,random.randint(0,5))
         
         return redirect(url_for("showRequests"))
 
@@ -55,4 +55,4 @@ def background_process():
 
 # ? *** Driver ***
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, port=5050)

@@ -10,6 +10,9 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
   <style>  
+    body {
+      background-image: url("../static/ani5.gif");
+    }
     #innerContainer {
       border-radius: 25px;
       border: 3px solid #73AD21;
@@ -18,12 +21,16 @@
       font-size: 23px;
       font-weight: 600;
     }
+    /*#selector {
+      width:100%;
+      height:100%;
+    }*/
   </style>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"> </script>  
   <script type="text/javascript">
     let oldList = []
-    const bg_color = ['primary','danger','warning','secondary','dark','success','info']
+    const bg_color = ['danger','warning','secondary','dark','success','info']
 
  
     setInterval(function() { 
@@ -57,6 +64,7 @@
 
 </head>
 <body>
+  <!-- <img src='../static/ani4.gif' id='selector'/> -->
   <div class="container-fluid" id="result">
     <div class="row">
   
