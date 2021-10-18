@@ -17,13 +17,13 @@ Installing
 ----------
 
 Install and update using [`pip`](https://pip.pypa.io/en/stable/getting-started/):
-
-    $ pip install -U Flask
-
+```shell
+$ pip install -U Flask
+```
 
 A Simple Example
 ----------------
-
+```python
     # save this as app.py
     from flask import Flask
 
@@ -32,7 +32,8 @@ A Simple Example
     @app.route("/")
     def hello():
         return "Hello, World!"
----
-    $ flask run
-      * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-
+```
+```shell
+$ flask run
+    * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+```
