@@ -1,12 +1,12 @@
 # API Development
 
 ## Table of contents:
- 1. [Introduction](url)
- 2. [Insomnia setup](url)
- 3. [Testing Requests](url)
-    - [GET](url)
-    - [POST](url)
-    - [DELETE](url)
+ 1. [Introduction](https://github.com/ISTE-VESIT-ORG/API-Development-2021/blob/API-learning/README.md#introduction)
+ 2. [Insomnia setup](https://github.com/ISTE-VESIT-ORG/API-Development-2021/blob/API-learning/README.md#api-testing)
+ 3. [REST API](https://github.com/ISTE-VESIT-ORG/API-Development-2021/blob/API-learning/README.md#rest-api)
+    - [GET](https://github.com/ISTE-VESIT-ORG/API-Development-2021/blob/API-learning/README.md#get)
+    - [POST](https://github.com/ISTE-VESIT-ORG/API-Development-2021/blob/API-learning/README.md#post)
+    - [DELETE](https://github.com/ISTE-VESIT-ORG/API-Development-2021/blob/API-learning/README.md#delete)
 
 ## Introduction
 This is boilerplate for basic understanding of devloping API and understanding its types and function using Flask
